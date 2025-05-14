@@ -2,7 +2,7 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { TypeAnimation } from "react-type-animation"
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
+import { ArrowDown, Github, Linkedin, Mail,ReceiptText  } from "lucide-react"
 import Link from "next/link"
 import ParticleBackground from "./particle-background"
 
@@ -69,6 +69,15 @@ export default function Hero() {
               <Button asChild variant="outline" className="border-accent text-accent hover:bg-accent/10">
                 <Link href="#projects">View Projects</Link>
               </Button>
+              <Button asChild  className="bg-accent hover:bg-accent/80 text-white">
+                <a href="https://drive.google.com/file/d/1KcRmxCpxqsdYCH3a3IRDDeMHw3q00j_E/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  <ReceiptText className="w-4 h-4 mr-2" />
+                  <span className="text-sm">Download</span>
+                  <span className="hidden md:inline">
+                    {' '}Resume
+                  </span>
+                </a>
+              </Button>
             </motion.div>
 
             <motion.div
@@ -87,7 +96,7 @@ export default function Hero() {
                 <span className="sr-only">GitHub</span>
               </a>
               <a
-                href="https://linkedin.com/in/sachin-rathod-241623250"
+                href="https://www.linkedin.com/in/sachin-rathod-b20b83175"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-foreground/70 hover:text-accent transition-colors"

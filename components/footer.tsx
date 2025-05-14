@@ -24,7 +24,7 @@ export default function Footer() {
               <span className="sr-only">GitHub</span>
             </a>
             <a
-              href="https://linkedin.com/in/sachin-rathod-241623250"
+              href="https://www.linkedin.com/in/sachin-rathod-b20b83175/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground/70 hover:text-accent transition-colors"
